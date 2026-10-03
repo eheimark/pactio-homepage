@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f9f7f5">
+    <meta name="description" content="Pactio has closed following the sale of our technology. Thank you to our customers, team and investors.">
+    <title>Pactio — Thank you</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f9f7f5;
+        --ink: rgb(15, 25, 57);
+        --blue: rgb(38, 77, 209);
+      }
+      * { box-sizing: border-box; }
+      html { min-height: 100%; background: var(--paper); }
+      body {
+        min-height: 100svh;
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(18px, 2.2vh, 28px);
+        padding: 48px 24px;
+      }
+      .logo {
+        display: block;
+        width: min(390px, 82vw);
+        height: auto;
+      }
+      main {
+        max-width: 1150px;
+        width: 100%;
+        text-align: center;
+      }
+      h1, p { margin: 0; }
+      h1, .address {
+        font-family: Inter, Arial, Helvetica, sans-serif;
+        font-size: clamp(21px, 1.9vw, 25px);
+        font-weight: 400;
+        line-height: 1.35;
+        letter-spacing: -.025em;
+      }
+      .closing {
+        margin-top: clamp(50px, 5vh, 68px);
+      }
+      .thanks {
+        display: inline-block;
+        position: relative;
+        margin-top: 12px;
+        padding-bottom: 15px;
+        color: var(--ink);
+        font-family: "Annie Use Your Telescope", cursive;
+        font-size: clamp(72px, 6.7vw, 90px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+      .thanks .underline {
+        position: absolute;
+        left: -2%;
+        bottom: 0;
+        display: block;
+        width: 104%;
+        height: 15px;
+        fill: var(--blue);
+        transform: rotate(-1.2deg);
+        pointer-events: none;
+      }
+      @media (max-width: 600px) {
+        .page { gap: 24px; }
+        .closing { margin-top: 52px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header><img class="logo" src="pactio-logo.svg" alt="Pactio" width="514" height="121"></header>
+      <main>
+        <h1>Pactio has closed following the sale of our technology.</h1>
+        <div class="closing">
+          <p class="address">To our customers, team and investors:</p>
+          <p class="thanks">thank you!<svg class="underline" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M5 6 C25 3 54 5 82 4 C117 3 151 3 184 5 C218 7 255 4 293 5 Q301 6 297 12 C277 14 255 11 231 12 C197 13 164 14 130 13 C95 12 65 14 32 13 L8 14 Q1 13 4 9 Z"/></svg></p>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
